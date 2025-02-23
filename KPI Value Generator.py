@@ -14,7 +14,7 @@ class JSONProcessorApp:
     def __init__(self, root):
         self.root = root
         self.root.title("JSON Processor")
-        self.root.geometry("800x600")
+        self.root.geometry("400x450")
         
         # Store loaded JSON data
         self.json_data = {file: None for file in self.REQUIRED_FILES}
