@@ -1,0 +1,596 @@
+{
+  "products": [
+    {
+      "extId": "Absolute_Silence",
+      "initialValue": 100
+    },
+    {
+      "extId": "Absolute_Silence_Small",
+      "initialValue": 100
+    },
+    {
+      "extId": "Advent_Calendar",
+      "initialValue": 100
+    },
+    {
+      "extId": "Apple_Dash",
+      "initialValue": 100
+    },
+    {
+      "extId": "Blueberry",
+      "initialValue": 100
+    },
+    {
+      "extId": "Cappuccino",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Full_Cream",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Full_Cream_Standard",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Full_Cream_with_Nuts",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Marzipan",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Marzipan_Supreme",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Milky_Bar",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Plain_Chocolate",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Selection_No1",
+      "initialValue": 100
+    },
+    {
+      "extId": "Cranberry_Dash",
+      "initialValue": 100
+    },
+    {
+      "extId": "Cream_Tart_Chocolate",
+      "initialValue": 100
+    },
+    {
+      "extId": "Cream_Tart_Strawberry",
+      "initialValue": 100
+    },
+    {
+      "extId": "Crispy_Caramel_Wafer",
+      "initialValue": 100
+    },
+    {
+      "extId": "Crispy_Cream_Wafer",
+      "initialValue": 100
+    },
+    {
+      "extId": "Crispy_Diet_Cream_Wafer",
+      "initialValue": 100
+    },
+    {
+      "extId": "Crispy_White_Wafer",
+      "initialValue": 100
+    },
+    {
+      "extId": "Diet_Cream",
+      "initialValue": 100
+    },
+    {
+      "extId": "Diet_Cream_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Diet_Cream_Cookie",
+      "initialValue": 100
+    },
+    {
+      "extId": "Diet_Cream_with_Nuts",
+      "initialValue": 100
+    },
+    {
+      "extId": "Double_Chocolate",
+      "initialValue": 100
+    },
+    {
+      "extId": "Ecuador_Cacao",
+      "initialValue": 100
+    },
+    {
+      "extId": "Eggnog_Special",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cherry",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cherry_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cherry_Bottle_10_L_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_033_L_Glass",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_10_L_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_15_L_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Lemon",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Lemon_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Enjoy_Diet",
+      "initialValue": 100
+    },
+    {
+      "extId": "Full_Cream",
+      "initialValue": 100
+    },
+    {
+      "extId": "Full_Cream_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Full_Cream_Cookie",
+      "initialValue": 100
+    },
+    {
+      "extId": "Full_Cream_Standard",
+      "initialValue": 100
+    },
+    {
+      "extId": "Full_Cream_with_Nuts",
+      "initialValue": 100
+    },
+    {
+      "extId": "Full_Cream_with_Nuts_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Heavenly_Cake_Caramel",
+      "initialValue": 100
+    },
+    {
+      "extId": "Heavenly_Cake_Hazelnut",
+      "initialValue": 100
+    },
+    {
+      "extId": "Java_Cacao",
+      "initialValue": 100
+    },
+    {
+      "extId": "Kaki",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Crispy_Diet_Cream_Wafer",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Crispy_White_Wafer",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Soft_Cream_Cookie",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lime_Extreme",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lime_Extreme_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lime_Extreme_PET_S",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lime_Extreme_Small",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lime_Regular",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lime_Regular_15_L_PET_Bottle",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lime_Regular_Syrup_Tank_25_L",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lower_Springs_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Lower_Springs_PET_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "LS_Absolut_NonCarbonated_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "LS_Silence_in_a_Can",
+      "initialValue": 100
+    },
+    {
+      "extId": "Magic_Moments",
+      "initialValue": 100
+    },
+    {
+      "extId": "Marzipan",
+      "initialValue": 100
+    },
+    {
+      "extId": "Marzipan_Supreme",
+      "initialValue": 100
+    },
+    {
+      "extId": "Medium_Springs",
+      "initialValue": 100
+    },
+    {
+      "extId": "Medium_Springs_Gallon",
+      "initialValue": 100
+    },
+    {
+      "extId": "Medium_Springs_in_Gallons",
+      "initialValue": 100
+    },
+    {
+      "extId": "Medium_Springs_PET_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Medium_Springs_PET_Extra_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Medium_Springs_Small",
+      "initialValue": 100
+    },
+    {
+      "extId": "Milky_Bar",
+      "initialValue": 100
+    },
+    {
+      "extId": "New_Guinea_Cacao",
+      "initialValue": 100
+    },
+    {
+      "extId": "Nut_Lovers",
+      "initialValue": 100
+    },
+    {
+      "extId": "Orange_Dash",
+      "initialValue": 100
+    },
+    {
+      "extId": "Orange_Flash",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pineapple",
+      "initialValue": 100
+    },
+    {
+      "extId": "Plain_Chocolate",
+      "initialValue": 100
+    },
+    {
+      "extId": "Plain_Chocolate_Cookie",
+      "initialValue": 100
+    },
+    {
+      "extId": "Raspberry",
+      "initialValue": 100
+    },
+    {
+      "extId": "Red_Grapes_Flash",
+      "initialValue": 100
+    },
+    {
+      "extId": "Red_Grapes_Flash_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Selection_No1",
+      "initialValue": 100
+    },
+    {
+      "extId": "Silence_in_a_Can",
+      "initialValue": 100
+    },
+    {
+      "extId": "Snow_White",
+      "initialValue": 100
+    },
+    {
+      "extId": "Snow_White_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Sour_Cream",
+      "initialValue": 100
+    },
+    {
+      "extId": "Special_Dark",
+      "initialValue": 100
+    },
+    {
+      "extId": "Strawberry",
+      "initialValue": 100
+    },
+    {
+      "extId": "Strawberry_Dash",
+      "initialValue": 100
+    },
+    {
+      "extId": "Strawberry_Yoghurt",
+      "initialValue": 100
+    },
+    {
+      "extId": "Strawberry_Yoghurt_Cookie",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Acai_Berry",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Chocolate_Popcorn",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Chocolate_Wafers",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Salted_Caramel",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Chocolate_Brownie",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Light_White_Chocolate",
+      "initialValue": 100
+    },
+    {
+      "extId": "Supreme_Selection",
+      "initialValue": 100
+    },
+    {
+      "extId": "Truffels_Supreme",
+      "initialValue": 100
+    },
+    {
+      "extId": "Upper_Springs_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Upper_Springs_PET_Big",
+      "initialValue": 100
+    },
+    {
+      "extId": "Vanilla_Yoghurt",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Handmade_Coffee_&_Walnuts",
+      "initialValue": 100
+    },
+    {
+      "extId": "CL_Advent_Calendar",
+      "initialValue": 100
+    },
+    {
+      "extId": "Absolute_Silence_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_033_L_Glass_Bottle",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_05_L_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_05_L_PET_Bottle",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_10_L_PET_Bottle",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_15_L_PET_Bottle",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_15_L_RCL",
+      "initialValue": 100
+    },
+    {
+      "extId": "Empower_Cola_Syrup_Tank_25_L",
+      "initialValue": 100
+    },
+    {
+      "extId": "Medium_Springs_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "Cinnamon_Special",
+      "initialValue": 100
+    },
+    {
+      "extId": "Cinnamon_Special_PET",
+      "initialValue": 100
+    },
+    {
+      "extId": "CO_Tank_full",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Diavolini",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Tonnolini",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Funghi",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Margherita",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Speciale",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Tonno",
+      "initialValue": 100
+    },
+    {
+      "extId": "Bean_Dip_Org",
+      "initialValue": 100
+    },
+    {
+      "extId": "Cheddar_Cheese",
+      "initialValue": 100
+    },
+    {
+      "extId": "Cheese_Dip_Med",
+      "initialValue": 100
+    },
+    {
+      "extId": "Classic",
+      "initialValue": 100
+    },
+    {
+      "extId": "Hot_Chili",
+      "initialValue": 100
+    },
+    {
+      "extId": "BBQ",
+      "initialValue": 100
+    },
+    {
+      "extId": "Tomato",
+      "initialValue": 100
+    },
+    {
+      "extId": "Chile_y_Limn",
+      "initialValue": 100
+    },
+    {
+      "extId": "Salt_and_Pepper",
+      "initialValue": 100
+    },
+    {
+      "extId": "Wasabi",
+      "initialValue": 100
+    },
+    {
+      "extId": "Chicken",
+      "initialValue": 100
+    },
+    {
+      "extId": "Smoked_Bacon",
+      "initialValue": 100
+    },
+    {
+      "extId": "Sweet_Chili",
+      "initialValue": 100
+    },
+    {
+      "extId": "Ranch_Dressing",
+      "initialValue": 100
+    },
+    {
+      "extId": "Shashlik_XXL",
+      "initialValue": 100
+    },
+    {
+      "extId": "Sour_Cream_and_Onion_XXL",
+      "initialValue": 100
+    },
+    {
+      "extId": "Chicken_Canada_Food",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Chocolate_Brownie_Canada_Food",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Light_White_Chocolate_Canada_Food",
+      "initialValue": 100
+    },
+    {
+      "extId": "LC_Salted_Caramel_Canada_Food",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Diavolini_Canada_Food",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Margherita_Canada_Food",
+      "initialValue": 100
+    },
+    {
+      "extId": "Pizza_Tonnolini_Canada_Food",
+      "initialValue": 100
+    },
+    {
+      "extId": "Sour_Cream_and_Onion_XXL_Canada_Food",
+      "initialValue": 100
+    },
+    {
+      "extId": "Sweet_Chili_Canada_Food",
+      "initialValue": 100
+    }
+  ]
+}

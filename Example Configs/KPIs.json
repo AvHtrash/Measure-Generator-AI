@@ -1,0 +1,30 @@
+{
+  "__comment": "p = period index starting from the fist week/day of the generated timeframe. s = start value of the product.",
+  "measures": [
+    {
+      "interfaceTable": "WeeklyMeasureReal",
+      "measureCode": "TVOL",
+      "formula": "f(p, s)= s + x * 5"
+    },
+    {
+      "interfaceTable": "WeeklyMeasureReal",
+      "measureCode": "IBSL",
+      "formula": "f(p, s)= (s + x * 5) / 2"
+    },
+	{
+      "interfaceTable": "WeeklyMeasureReal",
+      "measureCode": "OBSL",
+      "formula": "f(p, s)= (s + 10 + x * 5) / 2"
+    },
+    {
+      "interfaceTable": "DailyMeasureReal",
+      "measureCode": "AIVL",
+      "formula": "f(p, s)= s + x * 5"
+    },
+    {
+      "interfaceTable": "DailyMeasureReal",
+      "measureCode": "AOVL",
+      "formula": "f(p, s)= s + 10 + x * 5"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+import json
+import tkinter as tk
+from tkinter import messagebox, filedialog
+from datetime import datetime
+import os
+from typing import Dict, Optional
+
+class JSONProcessorApp:
+    REQUIRED_FILES = ['accounts.json', 'products.json', 'KPIs.json']
+    
+    def __init__(self, root):
+        self.root = root
+        self.root.title("JSON Processor")
+        self.root.geometry("600x400")
+        
+        # Store loaded JSON data
+        self.json_data: Dict[str, Optional[dict]] = {
+            file: None for file in self.REQUIRED_FILES
+        }
+        
+        self.create_ui()
+        
+    def create_ui(self):
+        # Create main frame
+        main_frame = tk.Frame(self.root, padx=20, pady=20)
+        main_frame.pack(fill=tk.BOTH, expand=True)
+        
+        # Instructions label
+        instructions = "Select a folder containing:\n" + "\n".join(self.REQUIRED_FILES)
+        tk.Label(main_frame, text=instructions, justify=tk.LEFT).pack(anchor='w', pady=(0, 20))
+        
+        # Folder selection button
+        select_button = tk.Button(
+            main_frame,
+            text="Select Folder",
+            command=self.select_folder,
+            width=20
+        )
+        select_button.pack(pady=10)
+        
+        # Status frame
+        self.status_frame = tk.Frame(main_frame)
+        self.status_frame.pack(fill=tk.BOTH, expand=True, pady=20)
+        
+        # Create status labels for each required file
+        self.status_labels = {}
+        for file in self.REQUIRED_FILES:
+            frame = tk.Frame(self.status_frame)
+            frame.pack(fill=tk.X, pady=2)
+            
+            tk.Label(frame, text=file, width=15, anchor='w').pack(side=tk.LEFT)
+            status_label = tk.Label(frame, text="Not loaded", fg="red")
+            status_label.pack(side=tk.LEFT, padx=10)
+            self.status_labels[file] = status_label
+        
+        # Process button
+        self.process_button = tk.Button(
+            main_frame,
+            text="Process Files",
+            command=self.process_files,
+            state=tk.DISABLED
+        )
+        self.process_button.pack(pady=10)
+        
+    def select_folder(self):
+        folder_path = filedialog.askdirectory(title="Select Folder")
+        if not folder_path:
+            return
+            
+        # Reset status
+        self.json_data = {file: None for file in self.REQUIRED_FILES}
+        
+        # Check each required file
+        all_files_present = True
+        for filename in self.REQUIRED_FILES:
+            file_path = os.path.join(folder_path, filename)
+            if os.path.exists(file_path):
+                try:
+                    with open(file_path, 'r') as f:
+                        self.json_data[filename] = json.load(f)
+                    self.status_labels[filename].config(text="Loaded", fg="green")
+                except json.JSONDecodeError:
+                    self.status_labels[filename].config(text="Invalid JSON", fg="red")
+                    all_files_present = False
+                except Exception as e:
+                    self.status_labels[filename].config(text=f"Error: {str(e)}", fg="red")
+                    all_files_present = False
+            else:
+                self.status_labels[filename].config(text="Not found", fg="red")
+                all_files_present = False
+        
+        # Enable/disable process button based on file status
+        self.process_button.config(state=tk.NORMAL if all_files_present else tk.DISABLED)
+    
+    def process_files(self):
+        try:
+            # Create output data structure
+            output_data = {
+                "timestamp": datetime.now().isoformat(),
+                "data": self.json_data,
+                "summary": {
+                    "accounts_count": len(self.json_data['accounts.json']) if isinstance(self.json_data['accounts.json'], list) else 1,
+                    "products_count": len(self.json_data['products.json']) if isinstance(self.json_data['products.json'], list) else 1,
+                    "kpis_count": len(self.json_data['KPIs.json']) if isinstance(self.json_data['KPIs.json'], list) else 1
+                }
+            }
+            
+            # Ask user where to save the output file
+            file_path = filedialog.asksaveasfilename(
+                defaultextension=".json",
+                filetypes=[("JSON files", "*.json")],
+                initialfile="processed_data.json"
+            )
+            
+            if file_path:
+                with open(file_path, 'w') as f:
+                    json.dump(output_data, f, indent=4)
+                messagebox.showinfo("Success", "Files processed and saved successfully!")
+        
+        except Exception as e:
+            messagebox.showerror("Error", f"An error occurred while processing: {str(e)}")
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = JSONProcessorApp(root)
+    root.mainloop()
