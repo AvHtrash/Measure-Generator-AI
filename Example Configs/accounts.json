@@ -7,38 +7,6 @@
     {
       "extId": "Account02",
       "weight": 100
-    },
-    {
-      "extId": "Account03",
-      "weight": 100
-    },
-    {
-      "extId": "Account04",
-      "weight": 100
-    },
-    {
-      "extId": "Account05",
-      "weight": 20
-    },
-    {
-      "extId": "Account06",
-      "weight": 20
-    },
-    {
-      "extId": "Account07",
-      "weight": 50
-    },
-    {
-      "extId": "Account08",
-      "weight": 50
-    },
-    {
-      "extId": "Account09",
-      "weight": 100
-    },
-    {
-      "extId": "Account10",
-      "weight": 100
     }
 	]
 }

@@ -1,30 +1,35 @@
 {
-  "__comment": "p = period index starting from the fist week/day of the generated timeframe. s = start value of the product.",
+  "__comment": "periodIndex = period index starting from the first week/day of the generated timeframe. initialValue = start value of the product. prdCustomValue1-3 and accCustomValue1-3 refer custom values that can be defined in the account and product files.",
   "measures": [
     {
-      "interfaceTable": "WeeklyMeasureReal",
+      "timeGranularity": "W",
+      "format": "I",
+      "measureCode": "SHIP",
+      "formula": "initialValue + periodIndex * 5"
+    },
+    {
+      "timeGranularity": "W",
+      "format": "D",
+      "measureCode": "BSL",
+      "formula": "(initialValue + periodIndex * 5) / 2"
+    },
+    {
+      "timeGranularity": "W",
+      "format": "I",
       "measureCode": "TVOL",
-      "formula": "f(p, s)= s + x * 5"
+      "formula": "(initialValue + periodIndex * 4.9) / 2"
+    },    
+    {
+      "timeGranularity": "D",
+      "format": "D",
+      "measureCode": "TREV",
+      "formula": "(initialValue + periodIndex * 0.05) * prdCustomValue1"
     },
     {
-      "interfaceTable": "WeeklyMeasureReal",
-      "measureCode": "IBSL",
-      "formula": "f(p, s)= (s + x * 5) / 2"
-    },
-	{
-      "interfaceTable": "WeeklyMeasureReal",
-      "measureCode": "OBSL",
-      "formula": "f(p, s)= (s + 10 + x * 5) / 2"
-    },
-    {
-      "interfaceTable": "DailyMeasureReal",
-      "measureCode": "AIVL",
-      "formula": "f(p, s)= s + x * 5"
-    },
-    {
-      "interfaceTable": "DailyMeasureReal",
-      "measureCode": "AOVL",
-      "formula": "f(p, s)= s + 10 + x * 5"
+      "timeGranularity": "D",
+      "format": "D",
+      "measureCode": "AREV",
+      "formula": "(initialValue + periodIndex * 0.06) * prdCustomValue1"
     }
   ]
 }
